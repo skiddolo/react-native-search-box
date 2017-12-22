@@ -7,11 +7,7 @@
 
 ## Install
 ```
-npm install --save react-native-search-box
-
-or
-
-yarn add react-native-search-box
+npm install --save react-native-search-box-custom
 ```
 
 ## Demo
@@ -19,10 +15,6 @@ yarn add react-native-search-box
 | Platform | Android | iOS |
 |:--------:|:-------:|:---:|
 | Demo | ![Android](https://media.giphy.com/media/3oKIPja49woFsDBuPC/giphy.gif) | ![iOS](https://media.giphy.com/media/3oKIPvb7oymPsobWI8/giphy.gif) |
-
-## Example code
-
-[Example](https://github.com/agiletechvn/react-native-atoz-listview/blob/master/example/src/screens/Contacts/Home.js#L162)
 
 ## Usage
 
