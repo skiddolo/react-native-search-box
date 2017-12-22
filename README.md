@@ -150,6 +150,12 @@ class MyScene extends PureComponent {
     onChangeText: PropTypes.func,
 
     /**
+     * keyword
+     * to change manually the keyword in search input
+     */
+    keyword: PropTypes.string,
+
+    /**
      * onCancel
      * return a Promise
      */

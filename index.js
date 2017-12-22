@@ -9,8 +9,7 @@ import {
   Dimensions,
   Keyboard,
   Image,
-  View,
-  ViewPropTypes
+  View
 } from 'react-native';
 
 const AnimatedTextInput = Animated.createAnimatedComponent(TextInput);
@@ -289,7 +288,7 @@ class Search extends PureComponent {
             }
           ]}
           editable={this.props.editable}
-          value={this.state.keyword}
+          value={this.props.keyword || this.state.keyword}
           onChangeText={this.onChangeText}
           placeholder={this.placeholder}
           placeholderTextColor={
@@ -497,14 +496,12 @@ Search.propTypes = {
   inputStyle: PropTypes.oneOfType([
     PropTypes.number,
     PropTypes.object,
-	ViewPropTypes.style,
-    Text.propTypes.style
+    PropTypes.style
   ]),
-  cancelButtonStyle: PropTypes.oneOfType([PropTypes.number, PropTypes.object, ViewPropTypes.style, Text.propTypes.style]),
+  cancelButtonStyle: PropTypes.oneOfType([PropTypes.number, PropTypes.object, PropTypes.style]),
   onLayout: PropTypes.func,
   cancelButtonTextStyle: Text.propTypes.style,
-
-  cancelButtonViewStyle: PropTypes.oneOfType([PropTypes.object, ViewPropTypes.style]),
+  cancelButtonViewStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.style]),
 
   /**
      * text input
